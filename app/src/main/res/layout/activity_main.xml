@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/leader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/right_flag"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_above="@id/into"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/right"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/into"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/into"
+            android:background="#1296db"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</FrameLayout>

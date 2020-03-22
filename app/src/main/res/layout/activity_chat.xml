@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_replace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_ll">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/xiaoxi_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/msg"
+            android:textSize="15sp"
+            android:drawableTop="@drawable/xiaoxi"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/cloudfile_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cloud_file"
+            android:textSize="15sp"
+            android:drawableTop="@drawable/yunwenjian"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/manage_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/manage"
+            android:textSize="15sp"
+            android:drawableTop="@drawable/guanli"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>
